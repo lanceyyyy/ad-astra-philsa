@@ -2,11 +2,15 @@
 import Banner from "./Banner";
 import HomeMenuBar from "./HomeMenuBar";
 import { Button, ButtonGroup } from "@nextui-org/react";
+import { BsFillBoxFill } from "react-icons/bs";
 import Image from "next/image";
+import IconStatistics from "./IconStatistics";
+import LandingStatistics from "./LandingStatistics";
+import TestimonyCard from "./TestimonyCard";
 
 const Main = () => {
   return (
-    <div className="w-screen  overflow-hidden ">
+    <div className="w-screen overflow-hidden ">
       <div>
         <HomeMenuBar />
         <Banner />
@@ -56,6 +60,29 @@ const Main = () => {
             consectetur facilis.
           </span>
         </section>
+      </div>
+      <div className="flex flex-col md:flex-row items-center justify-center">
+        <IconStatistics name="Name" icon={<BsFillBoxFill size={70} />} />
+        <IconStatistics name="Name" icon={<BsFillBoxFill size={70} />} />
+        <IconStatistics name="Name" icon={<BsFillBoxFill size={70} />} />
+      </div>
+      <div className="bg-[#1F5383] w-full flex flex-col md:flex-row items-center justify-center py-10">
+        <p className="text-white font-medium text-xl md:mr-10">
+          Join the list of our growing Scholars!
+        </p>
+        <LandingStatistics number="96" title="Current Scholars" />
+        <LandingStatistics number="24" title="Pending Applicants" />
+      </div>
+
+      <div className="py-[10%] flex justify-center">
+        <TestimonyCard
+          url={"/avatar.jpg"}
+          fname="Robert"
+          lname="Sy"
+          school="Technological University of the Philippines - Manila"
+          course="Bachelor of Science in Information Technology"
+          message="This is my message. This is my message. This is my message. This is my message. This is my message. This is my message. This is my message. "
+        />
       </div>
     </div>
   );
