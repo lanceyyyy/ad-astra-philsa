@@ -4,7 +4,7 @@ import React from "react";
 const TestimonyCard = ({ url, fname, lname, course, school, message }) => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-center w-3/4">
-      <div className="flex flex-col w-1/2 md:w-1/3 items-center md:mr-5 ">
+      <div className="flex flex-col w-1/2 md:w-1/3 items-center md:mr-10 ">
         <Image
           src={url}
           alt={`Photo of ${fname} ${lname}`}

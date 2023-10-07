@@ -13,7 +13,7 @@ const Nav = () => {
           <h1 className="md:text-2xl text-lg font-bold text-white">
             PHILIPPINE SPACE AGENCY
           </h1>
-          <p className="italic text-white text-md md:text-xl">
+          <p className="italic text-white  text-md md:text-xl">
             Ad Astra Scholarship
           </p>
         </span>

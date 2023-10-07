@@ -11,21 +11,23 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 const HomeMenuBar = () => {
   return (
-    <div className="bg-[#262626] text-white flex w-screen items-center justify-center md:justify-start">
-      <Link className="bar_selection" href="/">
-        <Button className="text-white bg-transparent">Home</Button>
+    <div className="bg-[#262626] text-white  flex w-screen items-center justify-center md:justify-start">
+      <Link className=" bar_selection" href="/">
+        <Button className="text-white bg-transparent text-xs md:text-base">
+          Home
+        </Button>
       </Link>
 
       <span className="bar_selection">
         <Dropdown>
           <DropdownTrigger>
-            <Button className="text-white bg-transparent">
+            <Button className="text-white bg-transparent text-xs md:text-base">
               <p>Programs</p>
               <IoMdArrowDropdown className="text-white text-2xl" />
             </Button>
           </DropdownTrigger>
 
-          <DropdownMenu
+          {/* <DropdownMenu
             aria-label="Static Actions"
             className="bg-[#262626] text-white rounded-md"
           >
@@ -63,14 +65,18 @@ const HomeMenuBar = () => {
             <DropdownItem>Space Law</DropdownItem>
             <DropdownItem>Space Policy</DropdownItem>
             <DropdownItem>Space Diplomacy. </DropdownItem>
-          </DropdownMenu>
+          </DropdownMenu> */}
         </Dropdown>
       </span>
       <span className="bar_selection">
-        <Button className="text-white bg-transparent">About</Button>
+        <Button className="text-white bg-transparent text-xs md:text-base">
+          About
+        </Button>
       </span>
       <span className="bar_selection">
-        <Button className="text-white bg-transparent">Apply Now</Button>
+        <Button className="text-white bg-transparent text-xs md:text-base">
+          Apply Now
+        </Button>
       </span>
     </div>
   );
