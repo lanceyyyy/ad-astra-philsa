@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+.bar_selection {
+  @apply text-sm px-2 py-1;
+}
+
+.inner_circle {
+  @apply bg-[#262626] w-[250px] h-[250px] rounded-full absolute right-0;
+}
+
+.inner_circle::before {
+  @apply bg-[#386B97] w-[250px] h-[250px] rounded-full absolute left-0 top-1;
+  content: " ";
+}
