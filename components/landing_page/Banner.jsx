@@ -11,7 +11,7 @@ const Banner = () => {
     >
       <Image
         src="/landing-banner.svg"
-        width={1495}
+        width={10000}
         height={400}
         style={{
           margin: "0",

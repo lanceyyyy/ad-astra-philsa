@@ -7,7 +7,7 @@ const TestimonyCard = ({ url, fname, lname, course, school, message }) => {
       <div className="flex flex-col w-1/2 md:w-1/3 items-center md:mr-5 ">
         <Image
           src={url}
-          alt={`Photo of ${name}`}
+          alt={`Photo of ${fname} ${lname}`}
           width={100}
           height={100}
           style={{
