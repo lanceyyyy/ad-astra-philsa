@@ -70,12 +70,12 @@ const HomeMenuBar = () => {
       </span>
       <span className="bar_selection">
         <Button className="text-white bg-transparent text-xs md:text-base">
-          About
+          <Link href="/about">About</Link>
         </Button>
       </span>
       <span className="bar_selection">
         <Button className="text-white bg-transparent text-xs md:text-base">
-          Apply Now
+          <Link href="/apply">Apply Now</Link>
         </Button>
       </span>
     </div>
