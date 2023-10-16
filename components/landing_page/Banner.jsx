@@ -7,6 +7,7 @@ const Banner = () => {
       className="min-w-screen "
       style={{
         overflow: "hidden",
+        marginTop: "-1px",
       }}
     >
       <Image
