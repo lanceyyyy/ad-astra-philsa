@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Table,
@@ -13,6 +14,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import ApplicationMenubar from "@/components/application/ApplicationMenubar";
 import Link from "next/link";
+import { useState } from "react";
 
 const Application = () => {
   return (
